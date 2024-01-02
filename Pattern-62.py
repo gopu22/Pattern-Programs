@@ -10,3 +10,14 @@ for k in range(1,n+1):
         print(chr(65+k),end=' ')
     print()
 
+
+#OUTPUT
+E 
+D D 
+C C C 
+B B B B 
+A A A A A 
+B B B B 
+C C C 
+D D 
+E 
