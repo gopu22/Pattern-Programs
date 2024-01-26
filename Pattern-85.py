@@ -1,10 +1,19 @@
 
-s1 = "adbc"
-s2 = "eiacdbhjikadbc"
-j=len(s1)
-for i in range(len(s2)-len(s1)+1):
-    if sorted(s1) == sorted(s2[i:j]):
-        print(True)
-        break
-    j+=1
-print(False)
+num=int(input("Enter a number:"))
+for i in range(1,num+1):
+    print(" "*(num-i),end="")
+    for j in range(i,i+1):
+        print(i,end=" ")
+        if i>=2:
+            print(" "*(2*i-4),end="")
+            for k in range(i,i+1):
+                print(i,end=" ")
+    print()
+
+
+#OUTPUT
+    1 
+   2 2 
+  3   3 
+ 4     4 
+5       5 
