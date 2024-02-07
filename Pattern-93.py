@@ -1,40 +1,19 @@
-#------------------------------ 1. Sorting -------------------------------
-l=[4,5,20,1,3,2]
-pivot=l[0]
 
-left=[i for i in l[1:] if i<pivot]
-right=[i for i in l[1:] if i>=pivot]
-
-print(left+[pivot]+right)
-
-
-#------------------------------ 2. two pointer approach for reversing -------------------------------
-s = "the sky is blue"
-a=s.split()
-i=0
-j=len(a)-1
-while i<j:
-    temp=a[i]
-    a[i]=a[j]
-    a[j]=temp
-    i+=1
-    j-=1
-print(' '.join(a))
+n=int(input("Enter a number:"))
+for i in range(1,n+1):
+    print(' '*(i-1),end=' ')
+    for j in range(i,i+1):
+        print(chr(64+i),end='')
+        if i<=4:
+            print(" "*(2*n-2*i-2),end=' ')
+            for k in range(i,i+1):
+                print(chr(64+i),end='')
+    print()
 
 
-#------------------------------ 3. swapping of two nos. using XOR -------------------------------
-a=202
-b=365
-a=a^b
-b=b^a
-a=b^a
-print(a,b)
-
-
-#------------------------------ 4. swapping of two nos. using addition & substraction -------------------------------
-a=202
-b=365
-a=a-b
-b=b+a
-a=b-a
-print(a,b)
+#OUTPUT
+ A       A
+  B     B
+   C   C
+    D D
+     E
